@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <title>fozdil cv</title>
+    <style>
+        :root {
+            --blue: #003D74;
+        }
+
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 12px;
+        }
+
+
+        h4 {
+            margin: 0px;
+        }
+
+        p {
+            margin: 0px;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFA;
+        }
+
+        .wrapper {
+            display: flex;
+
+            gap: 20px;
+
+            width: 210mm;
+            min-height: 297mm;
+            padding: 8mm;
+            border: 1px #D3D3D3 solid;
+            border-radius: 5px;
+            background: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 35%;
+        }
+
+        .personalInfo {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .personalInfo .skills {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-size: 1.5rem;
+        }
+
+        .personalInfo .education {
+            display: flex;
+            flex-direction: column;
+
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .personalInfo .education h4 {
+            font-weight: normal;
+
+        }
+
+        .personalInfo .education bold {
+            font-weight: bold;
+        }
+
+        .sectionHeader {
+            color: var(--blue);
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .sectionHeader div {
+            width: 0.8rem;
+            height: 0.8rem;
+            background-color: var(--blue);
+
+            border-radius: 50%;
+
+        }
+
+        .personalInline {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .personalInline div {
+            border-radius: 50%;
+            background-color: var(--blue);
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .personalInline span {
+            color: white;
+            font-size: 14px;
+
+        }
+
+        .right {
+            width: calc(65% - 20px);
+        }
+
+        .right .header {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .right .header .header-circle {
+            height: 65.6px;
+            width: 65.6px;
+            background-color: var(--blue);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+        }
+
+
+        .right .header .title h3 {
+            color: var(--blue);
+            font-size: 3.2rem;
+            margin: 0;
+        }
+
+        .right .header .title h5 {
+            margin: 0;
+            color: var(--blue);
+            font-size: 1.9rem;
+            font-weight: normal;
+        }
+
+        .right .summary ul li {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .work-history {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .work-history .work {
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .work-date {
+            width: 20%;
+        }
+
+
+        .work-history .work .work-detail {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+        }
+
+        .work-detail li {
+            margin-bottom: 10px;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print {
+
+            html,
+            body {
+                width: 210mm;
+                height: 297mm;
+            }
+
+            .wrapper {
+                margin: 0;
+                border: initial;
+                border-radius: initial;
+                width: initial;
+                min-height: initial;
+                box-shadow: initial;
+                background: initial;
+                page-break-after: always;
+            }
+
+            /* ... the rest of the rules ... */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class='wrapper'>
+            <div class="left">
+                <div class="personalInfo">
+                    <div class="sectionHeader">
+                        <div class="headerCircle"></div>
+                        <p>Personal Info</p>
+                    </div>
+                    <div class="personalInline">
+                        <div>
+                            <span class="material-symbols-outlined">
+                                mail
+                            </span>
+                        </div>
+                        <p>muhammedfatihozdil@gmail.com</p>
+                    </div>
+                    <div class="personalInline">
+                        <div>
+                            <span class="material-symbols-outlined">
+                                phone
+                            </span>
+                        </div>
+                        <p>+90(553) 586 18 78</p>
+                    </div>
+                    <div class="personalInline">
+                        <div>
+                            <span class="material-symbols-outlined">
+                                location_on
+                            </span>
+                        </div>
+                        <p>Antalya, Turkey</p>
+                    </div>
+                    <div class="personalInline">
+                        <div>
+                            <span class="fa-brands fa-github"></span>
+
+                        </div>
+                        <a href="https://github.com/fatihozdil">Github Profile</a>
+                    </div>
+                    <div class="personalInline">
+                        <div>
+                            <span class="fa-brands fa-linkedin-in"></span>
+
+                        </div>
+                        <a href="https://www.linkedin.com/in/muhammed-fatih-%C3%B6zdil-3877611b8/">LinkedIn Profile
+                        </a>
+                    </div>
+                    <div class="personalInline">
+                        <div>
+                            <span class="fa-brands fa-gitlab"></span>
+
+                        </div>
+                        <a href="https://gitlab.com/fatihozdil">GitLab Profile</a>
+                    </div>
+                </div>
+                <div class="personalInfo">
+                    <div class="sectionHeader">
+                        <div class="headerCircle"></div>
+                        <p>Skills</p>
+                    </div>
+                    <div class="skills">
+                        <p>React.js, React native, vanilla.js</p>
+                        <p>Flutter, Kotlin, PHP, HTML, Scss, Css</p>
+                        <p>Java, C#, .Net, Entity Framework</p>
+                        <p>Git, Vim, Ubuntu</p>
+                        <p>Rest API, websocket, webRTC</p>
+                    </div>
+                </div>
+                <div class="personalInfo">
+                    <div class="sectionHeader">
+                        <div class="headerCircle"></div>
+                        <p>Hobby/Interest</p>
+                    </div>
+                    <div class="skills">
+                        <p>Karate, Scuba diving, Chess, Cycling</p>
+
+                    </div>
+                </div>
+                <div class="personalInfo">
+                    <div class="sectionHeader">
+                        <div class="headerCircle"></div>
+                        <p>Education</p>
+                    </div>
+                    <div class="education">
+                        <h4>
+                            <bold>Computer Engineering, continues</bold>
+                            (2019-09 - 2024-06)
+                        </h4>
+                        <i>Akdeniz University, Antalya</i>
+                    </div>
+                    <div class="education">
+                        <h4>(2016-09 - 2019-06)</h4>
+                        <i>Mustafa Eminoglu Anatolian High School, kayseri</i>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="header">
+                    <div class="header-circle">
+                        <p>mo</p>
+                    </div>
+                    <div class="title">
+                        <h3>Muhammed Fatih OZDIL</h3>
+                        <h5>Full Stack Developer</h5>
+                    </div>
+                </div>
+
+                <div class="summary">
+                    <ul>
+                        <li>Complex problem-solver with an analytical and driven mindset. Dedicated to achieving
+                            demanding development objectives according to tight schedules while producing impeccable
+                            code.</li>
+                        <li>Organized and dependable candidate successful at managing multiple priorities with a
+                            positive attitude. Willingness to take on added responsibilities to meet team goals.</li>
+                    </ul>
+                </div>
+                <!-- work history -->
+                <div class="work-history">
+                    <div class="sectionHeader">
+                        <div class="headerCircle"></div>
+                        <p>Work History</p>
+                    </div>
+                    <div class="work">
+                        <p class="work-date">2022-06 - 2022-07</p>
+                        <div class="work-detail">
+                            <h4>Internship Student</h4>
+                            <i>Mavi İleri Bilişim Teknolojileri Arge Yazılım Ticaret Limited Şirketi, Antalya</i>
+                            <ul>
+                                <li>
+                                    developed a web application on indoor mapping.
+                                </li>
+                                <li>Getting live location data via GPS</li>
+                                <li>Drawing and arranging indoor walls on the map</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <p class="work-date">2022-03 - 2022-04</p>
+                        <div class="work-detail">
+                            <h4>Front End Developer</h4>
+                            <i>Freelance, Helmond</i>
+                            <a href="https://verandavergelijken.nl/">demo</a>
+                            <ul>
+                                <li>
+                                    Build a portfolio website for a commerce company
+
+                                </li>
+                                <li>Produced websites compatible with multiple browsers.</li>
+                                <li>Designed and updated layouts to meet usability and performance requirements.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <p class="work-date">2022-03 - 2022-04</p>
+                        <div class="work-detail">
+                            <h4>Intern Engineer</h4>
+                            <i>
+                                Worknight Studios, Istanbul</i>
+
+                            <ul>
+                                <li>
+                                    Developed a social media platform for gamers
+                                </li>
+                                <li>implemented web socket for real-time chat</li>
+                                <li>implemented webRTC for video conversation</li>
+                                <li>
+                                    Implemented rich, interactive data visualizations using modern JavaScript and
+                                    software development techniques.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- projects -->
+                <div class="work-history">
+                    <div class="sectionHeader">
+                        <div class="headerCircle"></div>
+                        <p>Projects</p>
+                    </div>
+                    <div class="work">
+                        <p class="work-date"></p>
+                        <div class="work-detail">
+                            <h4>Front End Developer</h4>
+                            <i>Webitor</i>
+                            <a style="margin-bottom: 10px;" href="https://webitorr.netlify.app"> demo</a>
+                            <p>Web based text editor that can be used for basic text editing tasks.</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="work">
+                        <p class="work-date"></p>
+                        <div class="work-detail">
+                            <h4>Front End Developer</h4>
+                            <i>E-Journal</i>
+
+                            <p>website that allows the university community to share technological news</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <p class="work-date"></p>
+                        <div class="work-detail">
+                            <h4>Full Stack Developer</h4>
+                            <i>Computer Tracking System</i>
+                            <a href="https://github.com/fatihozdil/computer_tracking_system_frontend">source code</a>
+                            <p>A web-based system that allows the problematic computers in the university laboratories
+                                to be reported by the students with a QR, allowing the authorities to follow the
+                                problems systematically.</p>
+                        </div>
+                    </div> -->
+
+
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="left"></div>
+            <div class="right">
+                <!-- projects continues -->
+                <div class="work-history">
+
+
+                    <div class="work" style="margin-bottom: 30px;">
+                        <p class="work-date"></p>
+                        <div class="work-detail">
+                            <h4>Front End Developer</h4>
+                            <i style="margin-bottom: 10px;">E-Journal</i>
+
+                            <p>website that allows the university community to share technological news</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <p class="work-date"></p>
+                        <div class="work-detail">
+                            <h4>Full Stack Developer</h4>
+                            <i>Computer Tracking System</i>
+                            <a style="margin-bottom: 10px;"
+                                href="https://github.com/fatihozdil/computer_tracking_system_frontend">source code</a>
+                            <p>A web-based system that allows the problematic computers in the university laboratories
+                                to be reported by the students with a QR, allowing the authorities to follow the
+                                problems systematically.</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <p class="work-date"></p>
+                        <div class="work-detail">
+                            <h4>Full Stack Developer</h4>
+                            <i>Restaurant Finder App</i>
+
+                            <p>Mobile application that helps users find restaurants in their area</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <p class="work-date"></p>
+                        <div class="work-detail">
+                            <h4>Full Stack Developer</h4>
+                            <i>Personal Expenses</i>
+                            <a href="https://gitlab.com/flutterlearningprojects/personal-expenses-app">source code</a>
+                            <p>Mobile application that helps users find restaurants in their area</p>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <p class="work-date"></p>
+                        <div class="work-detail">
+                            <h4>Full Stack Developer</h4>
+                            <i>Meal App</i>
+                            <a href="https://github.com/fatihozdil/MealAPP_reactNative">source code</a>
+                            <p>Application that contains recipes of dishes listed by categories</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- Courses -->
+                <div class="work-history">
+                    <div class="sectionHeader">
+                        <div class="headerCircle"></div>
+                        <p>Courses</p>
+                    </div>
+                    <div class="work">
+                        <p class="work-date">2022-02</p>
+                        <div class="work-detail">
+                            <h4>Flutter & Dart - The Complete Guide</h4>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <p class="work-date">2021-06</p>
+                        <div class="work-detail">
+                            <h4>React Native - The Practical Guide</h4>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <p class="work-date">2021-03</p>
+                        <div class="work-detail">
+                            <h4>React - The Complete Guide (incl Hooks, React Router, Redux)</h4>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <p class="work-date">2020-06</p>
+                        <div class="work-detail">
+                            <h4>Web Development with Complete PHP from Zero to Advanced</h4>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- References -->
+                <div class="work-history">
+                    <div class="sectionHeader">
+                        <div class="headerCircle"></div>
+                        <p>References</p>
+                    </div>
+                    <div class="work">
+                        <p class="work-date"></p>
+                        <div class="work-detail">
+                            <h4>Prof. Dr. Ümit D. ULUŞAR</h4>
+                            <i>General Manager/Co-Founder, Mavi İleri Bilişim Teknolojileri Arge Yazılım Ticaret Limited
+                                Şirketi</i>
+
+                        </div>
+                    </div>
+                    <div class="work">
+                        <p class="work-date"></p>
+                        <div class="work-detail">
+                            <h4>YUSUF SİNAN HANAY</h4>
+                            <i>Asst. Prof. at Akdeniz University, Sentaks.net</i>
+
+                        </div>
+                    </div>
+                    <div class="work">
+                        <p class="work-date"></p>
+                        <div class="work-detail">
+                            <h4>
+                                Oguzhan ISIK</h4>
+                            <i>CEO, Worknight Studios</i>
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+    </script>
+</body>
+
+</html>
